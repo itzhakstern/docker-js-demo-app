@@ -13,6 +13,7 @@ from pytest_bdd import (
 def context():
     return {}
 
+
 @scenario('edit_profile.feature', 'Edit my profile')
 def test_edit_my_profile(context):
     pass
@@ -30,7 +31,6 @@ def i_want_to_edit_my_profile(context):
     context['page_home'].edit_email()
     context['page_home'].edit_interests()
     context['page_home'].update_button()
-    """I want to edit my profile."""
 
 
 @then('The data will be update in the data base')
